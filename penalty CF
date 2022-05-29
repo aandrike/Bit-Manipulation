@@ -1,0 +1,49 @@
+https://codeforces.com/problemset/problem/1553/C
+
+
+
+// implementation
+
+
+
+first all the time odd
+second all the time
+
+cnt the number of first one and the second one
+
+then count the number that are in ? here
+
+keep on checking the number of goals of one team is less(let's say)
+
+than the second one by adding with the remaining chance
+
+let's say if both the team are scoring same at every kick 
+
+i.e either they are scoring 0 or 1 continue
+
+if any team scored greater than the other team then 
+
+suppose its all future kicks will not score
+
+and the losing team future kicks will score
+
+and then if wining team is still wining then return that index
+
+else continue
+
+
+we'll intialise team1 , doubt1 , team2 , doubt2 
+
+how we'll calculate the remaining kicks of any team
+
+we subtract the index from 10 and divide it by 2 
+
+if we are at odd index then add 1 for team 2 if it is victim 
+
+
+we'll check at each iteration if
+
+wining team score > losing team score + its doubts + remaining 
+
+if at any index it satisfy we return that index else return 10
+
